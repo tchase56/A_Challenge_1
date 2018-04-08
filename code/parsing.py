@@ -17,7 +17,6 @@ import re
 import glob
 import random
 
-# Permute both X and y keeping same relative ordering
 def permute(X, y, label):
     """Permute X, y, and their labels in a consistent manor
 
@@ -40,7 +39,6 @@ def permute(X, y, label):
         label_shuf.append(label[ind])
     return X_shuf, y_shuf, label_shuf
 
-# Function for permuting and splitting data into training, developement, and test
 def batchify(X, y, labels, batch_size = 8, epochs = 2): 
     """Load batches of data for 2-D deep learning model
     here we print information about the batch for unit testing instead of feeding into a model
